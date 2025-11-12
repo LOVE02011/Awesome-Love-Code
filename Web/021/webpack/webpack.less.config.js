@@ -40,8 +40,8 @@ const lessConfig = {
   },
   plugins: [],
   optimization: {
-    minimizer: [new OptimizeCssAssetsPlugin({ // 使用 OptimizeCssAssetsPlugin 对css进行压缩
-      cssProcessor: require('cssnano'),   // css 压缩优化器
+    minimizer: [new OptimizeCssAssetsPlugin({ // 使用 OptimizeCssAssetsPlugin 對css進行壓縮
+      cssProcessor: require('cssnano'),   // css 壓縮優化器
       cssProcessorOptions: { discardComments: { removeAll: true } } // 去除所有注释
     })]
   }
