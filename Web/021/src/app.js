@@ -23,21 +23,33 @@ export default class App extends React.Component {
 
     fullStyle = [
         `/*
-* Hi。宝贝！
-* 这么久了。还没和宝贝说过我的工作呢！
-* 我是个前端工程师。俗称程序员。网页相关。
-* 如这个页面。就是个什么也没有的网页。
-* 我的工作就是给这种空白的页面加点儿东西。
-* 嗯。说起来手机和电脑还得区分一下。
+* 黃詩婷，不 是嘟嘟的棒棒糖！請允許我最後在叫你一次。
+* 我們的經歷可能是場意外，但也不可否認它曾經是最美最好的一場意外！
+* 能走到這邊已經很不容易了，我們也都精疲力竭了，是時候要轉身了!
+* 對妳，我曾經愛得死去活來，我願意為了妳改變自己。
+* 我只想把最好的留給妳。
+* 也許是我貪心，是我踩過不該跨越的那條線，但也木已成舟了。
+* 我願妳未來能開開心心，這是我最內心的話。
+* 但我不可能祝福您跟他，這也是實話。
+* 如果妳覺得錯誤是我們的開始，我不否認。
+* 但他也是該負起，他沒辦法給妳的東西。
+* 若不是這樣，真的不會有我的出現。
+
+* 這些話我很想當面跟他說，我最後選擇只留下美好的回憶，所以我將沉默。
+* 我會把美好的回憶記在腦裡，不留下任何實質的東西。
+* 最後，我還是想說，我曾經很認真的在愛妳，也感謝您一直的陪伴。
+* 緣分盡了，時間也到了，下一班列車也進站了，不是該留戀的時候了。
+
+* 這也是我對妳的最後一武了，24小時候我會把這個網站關掉。
 * 你现在用的是。。。${isPc ? '电脑' : '手机'}
 */
 
-/* 首先给所有元素加上过渡效果 */
+/* 首先给所有元素加上些效果 */
 * {
   -webkit-transition: all .5s;
   transition: all .5s;
 }
-/* 白色背景太单调了。来点背景 */
+/* 白色背景太過於單調。加上個背景 */
 body, html {
   color: #fff;
   background-color: darkslategray;
@@ -55,14 +67,14 @@ body, html {
   padding: 10px;
 }
 
-/* 这些代码颜色都一样。加点儿高亮区别来 */
+/* 这些代碼的颜色都一样。加高高亮做區別 */
 .token.selector{ color: rgb(133,153,0) }
 .token.property{ color: rgb(187,137,0) }
 .token.punctuation{ color: yellow }
 .token.function{ color: rgb(42,161,152) }
 .token.comment{ color: rgb(177,177,177) }
 
-/* 加个 3D 效果 */
+/* 加上 3D 的效果 */
 html{
   perspective: 1000px;
   -webkit-perspective: 1000px;
@@ -77,11 +89,11 @@ html{
 }
 
 /*
-* 宝贝，今天教你写代码。
-* 用代码画一个爱心。
+* 今天為妳打最後一個代码。
+* 我用代码畫了一顆愛心。
 */
 
-/* 首先，来一个画板 */
+/* 首先，拉一个面板 */
 .heartWrapper {
   ${ isPc ? `width: 48vw;
   height: 96vh;` : `width: 96vw;
@@ -98,7 +110,7 @@ html{
   -webkit-transform-origin: 50% 0% 0;`}
 }
 
-/* 画一个方块，当左心室和右心室 */
+/* 畫一个方形，就當左心室和右心室 */
 .heart {
   width: 100px;
   height: 100px;
@@ -111,7 +123,7 @@ html{
   transform: rotate(45deg);
 }
 
-/* 画上左心房 */
+/* 畫上左心房 */
 .heart::before {
   content: '';
   background: #E88D8D;
@@ -123,7 +135,7 @@ html{
   top: 1px;
 }
 
-/* 再画上右心房 */
+/* 再畫上右心房 */
 .heart::after {
   content: '';
   background: #E88D8D;
@@ -135,7 +147,7 @@ html{
   top: -38px;
 }
 
-/* 太单调了，让心跳动起来 */
+/* 太簡單了，我想讓心跳動起来 */
 @keyframes throb {
   0% {
     transform: scale(1) rotate(45deg);
@@ -153,8 +165,8 @@ html{
   animation: throb 1s infinite linear;
 }
 /*
-* Ok，完成！
-* 宝贝，情人节快乐！
+* 恩，完成了！
+* 祝福您，未來都能天天的快樂！
 */
 
 `
