@@ -81,9 +81,9 @@ if (isDebug) {
   base.plugins.push(new CleanWebpackPlugin(
     "*",
     {
-      root: releasePath,                      //根目录
-      verbose: true,        　　　　　　　　　　//开启在控制台输出信息
-      dry: false        　　　　　　　　　　//启用删除文件
+      root: releasePath,                      //根目錄
+      verbose: true,        　　　　　　　　　　//開啟在控制台输出信息
+      dry: false        　　　　　　　　　　//啟用删除文件
     }
   ))
 }
